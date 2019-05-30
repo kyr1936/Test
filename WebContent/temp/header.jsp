@@ -12,7 +12,7 @@
   
   <style>
   body {
-    font: 400 15px/1.8 Lato, sans-serif;
+    font-family: 'NanumGothic','나눔고딕','맑은 고딕','Malgun Gothic','돋움',dotum,'Apple SD Gothic Neo',sans-serif;
     color: #777;
   }
   h3, h4 {
@@ -21,8 +21,13 @@
     font-size: 20px;
     color: #111;
   }
-  .container {
-    
+ 
+/*   .container{
+  	width:100%;
+  } */
+  #nav_con{
+  	width:55%;
+  	margin: 0 auto;
   }
   .person {
     border: 10px solid transparent;
@@ -33,6 +38,9 @@
   }
   .person:hover {
     border-color: #f1f1f1;
+  }
+  .container-fluid{
+  	border: 1px solid #cccccc;
   }
   .carousel-inner img {
    
@@ -61,7 +69,6 @@
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
-
   .btn {
     padding: 10px 20px;
     background-color: #333;
@@ -86,27 +93,33 @@
   .nav-tabs li a {
     color: #777;
   }
-
   .navbar {
-    font-family: Montserrat, sans-serif;
+    font-family: 'NanumGothic','나눔고딕','맑은 고딕','Malgun Gothic','돋움',dotum,'Apple SD Gothic Neo',sans-serif;
+    font-weight:bold;
     margin-bottom: 0;
     background-color: white;
     border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity: 0.9;
+    font-size: 15px !important;
+    color:black;
+    
   }
-  /* .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-  }*/
+  .nav>li>a { 
+    width:110px;
+    text-align:center;
+ 	   
+  }
   .navbar-nav li a:hover {
     color: #555 !important;
     
   } 
    .navbar-nav li a {
     color: #555 !important;
-     border-left: 1px solid #555;
+     border-left: 1px solid #cccccc;
   } 
+   .navbar-nav li:last-child {
+    color: #555 !important;
+     border-right: 1px solid #cccccc;
+  }
    .navbar-nav li.active a {
     color: #555 !important;
     background-color: white !important;
@@ -143,39 +156,39 @@
   textarea {
     resize: none;
   }
+  
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage"><img src="./images/header_nav_logo.png"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#band">BAND</a></li>
-        <li><a href="#tour">TOUR</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li> 
-          </ul>
-        </li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
-    </div>
-  </div>
+  <div class="container-fluid" id="nav_container">
+			<div class="conainer">
+			<div class="row"  id ="nav_con">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#myNavbar">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#myPage">
+					<img src="./images/header_nav_logo.png"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+					<!-- href #부분에 각자 보여줄 페이지 링크 넣어주세요 -->
+						<li><a href="#myPage">영화</a></li>
+						<li><a href="#band">상영시간표</a></li>
+						<li><a href="#tour">고객센터</a></li>
+						<li><a href="#contact">커뮤니티</a></li>
+						<li><a href="#more">로그인</a></li>
+					</ul>
+				</div>
+			</div>
+				
+			</div>
+
+		</div>
 </nav>
 
 
